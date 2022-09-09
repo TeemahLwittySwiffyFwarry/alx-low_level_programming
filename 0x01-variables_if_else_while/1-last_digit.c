@@ -2,12 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 
-/i**
+/**
  * main - Entry point
  *
  * Description: Print the lst digit of numbers
  *
- * Return: Always 0 (Sucess)
+ * Return: Always 0(Sucess)
  */
 
 int main(void)
@@ -23,7 +23,7 @@ int main(void)
 
 	if (last_digit > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, last_digit  = 0)
+		printf("Last digit of %d is %d and is greater than 5\n", n, last_digit);
 	}
 	else if (last_digit < 6 && last_digit != 0)
 	{
