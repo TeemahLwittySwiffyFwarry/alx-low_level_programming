@@ -9,6 +9,7 @@
  * Return: 0 (Sucess)
  */
 int main(void)
+{
 	printf("Size of a char: %dbyte(s)\n", (int) sizeof(char));
 	printf("Size of an int: %dbyte(s)\n", (int) sizeof(int));
 	printf("Size of a long int: %d byte(s)\n", (int) sizeof(long int));
