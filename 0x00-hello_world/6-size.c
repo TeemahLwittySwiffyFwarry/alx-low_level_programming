@@ -1,22 +1,19 @@
 #include <stdio.h>
+
 /**
- * main - Point of entry
+ * main - Entry point
  *
- * Return: 0, it is always sucessful.
+ * Description: Print the type of various things.
+ * It can be runned in the syetem.
+ *
+ * Return: 0 (Sucess)
  */
 int main(void)
-{
-int a;
-long int b;
-long long int c;
-char d;
-float f;
-
-	printf("size of a char: %1u byte(s)\n", (unsigned long)sizedof(d));
-	printf("size of an int: %1u byte(s)\n", (unsigned long)sizeof(a));
-	printf("size of a long int: %1u byte(s)\n", (unsigned long)sizeof(b));
-	printf("size of a long long int: %1u byte(s)\n", (unsigned long)sizeof(d));
-	printf("size of a float: %1u byte(s)\n", (unsigned long)sizeof(f));
+	printf("Size of a char: %dbyte(s)\n", (int) sizeof(char));
+	printf("Size of an int: %dbyte(s)\n", (int) sizeof(int));
+	printf("Size of a long int: %d byte(s)\n", (int) sizeof(long int));
+	printf("Size of a long long int: %d byte(s)\n", (int) sizeof(long long int));
+	printf("Size of  float: %d byte(s)\n", (int) sizeof(float));
 
 	return (0);
 }
