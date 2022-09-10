@@ -11,27 +11,31 @@
 
 int main(void)
 {
-	int digit1, digit2, digit3;
+	int d1, d2, d3;
 
-	for (digit1 = 0; digit1 < 9; digit1++)
+	for (d1 = '0'; d1 <= '9'; d1++)
 	{
-		for (digit2 = digit1 + 1; digit2 < 10; digit2++)
+		for (d2 = '1'; d2 <= '9'; d2++)
 		{
-			for (digit3 = digit3 + 1; digit3 < 10; digit3++)
+			for (d3 = '2'; d3 <= '9'; d3++)
 			{
-				putchar((digit1 % 10) + '0');
-				putchar((digit2 % 10) + '0');
-				putchar((digit3 % 10) + '0');
+				if (d2 > d1 && d3 > d2)
+				{
+					putchar(d1);
+					putchar(d2);
+					putchar(d3);
 
-				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
-					continue;
-
-				putchar(',');
-				putchar(' ');
+					if (d1 != 55 || d2 != 56 || d3 !=57)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
 			}
 		}
 	}
 	putchar('\n');
 
 	return (0);
+
 }
