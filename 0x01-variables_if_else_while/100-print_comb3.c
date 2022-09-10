@@ -11,7 +11,7 @@
 
 int main(void)
 {
-	int digi1, digit2;
+	int digit1, digit2;
 
 	for (digit1 = 48; digit1 < 58; digit1++)
 	{
