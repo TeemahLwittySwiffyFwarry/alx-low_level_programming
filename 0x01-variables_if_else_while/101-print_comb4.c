@@ -25,7 +25,7 @@ int main(void)
 					putchar(d2);
 					putchar(d3);
 
-					if (d1 != 55 || d2 != 56 || d3 !=57)
+					if (d1 != 55 || d2 != 56 || d3 != 57)
 					{
 						putchar(',');
 						putchar(' ');
