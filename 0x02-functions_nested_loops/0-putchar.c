@@ -6,11 +6,11 @@
  * Description:Writing a program that
  * print putchar followed by a new line.
  *
- * Return 0 (Success)
+ * Return: 0 (Success)
  *
  */
 
-	int main(void)
+int main(void)
 {
 	_putchar('_');
 	_putchar('p');
