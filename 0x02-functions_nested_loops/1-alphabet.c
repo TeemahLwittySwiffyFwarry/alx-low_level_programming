@@ -2,15 +2,20 @@
 
 /**
  * print alphabet -> prints the lowercase alphabets
+ *
+ * Descriprion: Prints the alphabet, in lowercase,followed by a new line.
+ *
+ * Return: 0(Success)
  */
 
 void print_alphabet(void)
 {
-	int j;
+	char ch;
 
-	for (j = 'a'; j <= 'z'; j++)
+	for (ch = 'a'; ch <= 'z'; ch++)
 	{
-		_putchar(j);
+		_putchar(ch);
 	}
 	_putchar('\n');
+
 }
