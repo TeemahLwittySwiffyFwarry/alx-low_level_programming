@@ -2,7 +2,7 @@
 
 /**
  *
- * print_alphabet - Prints Alphabets
+ * Main - Entry
  *
  * Description: Prints the alphabet, in lowercase,followed by a new line.
  *
