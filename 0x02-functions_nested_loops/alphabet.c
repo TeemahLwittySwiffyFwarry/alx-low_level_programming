@@ -1,12 +1,15 @@
 #include "main.h"
 
 /**
+ *
  * print_alphabet - Prints Alphabets
  *
- * Descriprion: Prints the alphabet, in lowercase,followed by a new line.
+ * Description: Prints the alphabet, in lowercase,followed by a new line.
  *
  * Return: 0(Success)
+ *
  */
+
 void print_alphabet(void)
 {
 	char ch;
@@ -16,5 +19,4 @@ void print_alphabet(void)
 		_putchar(ch);
 	}
 	_putchar('\n');
-
 }
