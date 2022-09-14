@@ -1,7 +1,6 @@
 #include "main.h"
 
 /**
- *
  *_isalpha - Checks for alphabetic characters
  *
  *@c: c is the argument passed
@@ -19,7 +18,6 @@ int _isalpha(int c)
 	{
 		return (1);
 	}
-	
 	else
 	{
 		return (0);
