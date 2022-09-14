@@ -33,7 +33,7 @@ void jack_bauer(void)
 			i_equals_to_one_or_zero(i);
 		}
 		else if (i == '2')
-		{_equals_to_two(i);
+		{i_equals_to_two(i);
 		}
 	}
 }
