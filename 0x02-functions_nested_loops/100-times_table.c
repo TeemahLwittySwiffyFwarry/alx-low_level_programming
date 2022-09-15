@@ -1,51 +1,75 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_times_table - outputs times tables 9x9
- * @n: column and row size (always the same)
+  * else_condition - else statment function
+  * Return: void
+  */
+
+void else_condition(void);
+
+/**
+ * print_times_table - Prints the n times table, starting with 0.
  *
- * returns - void
+ *@n: integer value to be passed in.
+ *
+ * Return: void
  *
  */
 
 void print_times_table(int n)
 {
-	int row, col, p;
+	int row, col, prod;
 
-	if (n <= 15 && n > 0)
+	if (n > 0 && n <= 15)
 	{
-		for (row = 0; row <= n; ++row)
+		for (row = 0; row <= n; row++)
 		{
 			_putchar('0');
-			_putchar(',');
-			for (col = 1; col <= n; ++col)
+			for (col = 1; col <= n; col++)
 			{
-				p = col * row;
-				_putchar(' ');
-				if (p / 100  >= 1)
+				prod = row * col;
+				if (prod < 10)
 				{
-					_putchar('0' + p / 100);
-					_putchar('0' + p / 10 % 10);
-					_putchar('0' + p % 10);
-				}
-				else if (p / 10 >= 1)
-				{
-					_putchar(' ');
-					_putchar('0' + p / 10);
-					_putchar('0' + p % 10);
-				}
-				else
-				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar('0' + p);
-				}
-				if (col < n)
 					_putchar(',');
-				else
-					_putchar('\n');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(prod + '0');
+				}
+				else if (prod >= 10 && prod < 100)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(((prod / 10) % 10) + '0');
+					_putchar((prod % 10) + '0');
+				}
+				else if (prod >= 100 && prod < 1000)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(((prod / 100) % 10) + '0');
+					_putchar(((prod / 10) % 10) + '0');
+					_putchar((prod % 10) + '0');
+				}
 			}
+			_putchar('\n')
 		}
 	}
+	else if (n == 0)
+		else_condition();
+}
+
+/**
+ * else_condition - else statement for top function
+ *
+ * Return: void
+ *
+ */
+
+void else_condition(void)
+
+{
+	_putchar('0');
+	_putchar('\n');
 }
