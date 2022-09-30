@@ -32,14 +32,13 @@ int main(int argc, char **argv)
 			{
 				if (total >= cents[i])
 					count += total / cents[i];
-				total = total % cents[i];
+					total = total % cents[i];
 			}
 		}
 	}
 	if (total == 1)
 		count++;
-}
-else
+	else
 {
 	printf("Error\n");
 	return (1);
