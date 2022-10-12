@@ -44,7 +44,7 @@ int op_mul(int a, int b)
  * @b: ...
  *
  * Return: ...
- * 
+ *
  */
 int op_div(int a, int b)
 {
