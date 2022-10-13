@@ -12,7 +12,7 @@ void print_all(const char * const format, ...)
 	int flag;
 	char *str;
 	va_list a_list;
-	
+
 	va_start(a_list, format);
 	i = 0;
 	while (format != NULL && format[i] != '\0')
@@ -33,7 +33,7 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				str = va_arg(a_list, char*);
-				if(str == NULL)
+				if (str == NULL)
 					str = "(nil)";
 				printf("%s", str);
 				flag = 0;
